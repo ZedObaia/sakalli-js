@@ -1,0 +1,24 @@
+{
+  "name": "@zedobaia/sakalli",
+  "version": "0.0.1",
+  "description": "js library for working with sakalli",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Zeyad Obaia",
+  "license": "MIT",
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "es6" : true
+    },
+    "parserOptions" :{
+      "parser": "babel-eslint",
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    },
+    "rules": {}
+  }
+}
