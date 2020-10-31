@@ -33,7 +33,7 @@
     * In your `main.js` or entry point add
 
         ```
-        import Sakalli from "vue-sakalli";
+        import Sakalli from "@zedobaia/sakalli";
         
         Vue.prototype.$sakalli = new Sakalli("localhost:8080");
         ```
