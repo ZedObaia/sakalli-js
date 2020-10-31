@@ -1,5 +1,5 @@
 {
-  "name": "@zedobaia/sakalli",
+  "name": "sakalli",
   "version": "0.0.1",
   "description": "js library for working with sakalli",
   "main": "index.js",

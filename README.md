@@ -6,7 +6,7 @@
 ## Installation 
 * Using npm
 
-        `npm install --save  @zedobaia/sakalli`
+        `npm install --save  sakalli`
 
 ## Usage 
 
