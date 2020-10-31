@@ -1,4 +1,4 @@
-# sakalli-js
+# sakalli
 
 ## Js package for working with [sakalli](https://github.com/zedObaia/sakalli)
 
@@ -6,7 +6,7 @@
 ## Installation 
 * Using npm
 
-        `npm install --save  sakalli`
+        npm install --save  sakalli
 
 ## Usage 
 
@@ -14,18 +14,18 @@
     ```
     const sakalli = new Sakalli("localhost:8080"); // or your server ip
         window.onload = function () {
-        let connected = sakalli.connect("555"); // 555 is the user id, to isolate each user 
-        if (connected) {
-            sakalli.on('notification', data => {
-            console.log(data);
-            })
-            sakalli.on('opened', function () {
-            console.log("connection established!!");
-            })
-            sakalli.on('closed', () => {
-            console.log("connection closed!!");
-            })
-        }
+            let connected = sakalli.connect("555"); // 555 is the user id, to isolate each user 
+            if (connected) {
+                sakalli.on('notification', data => {
+                console.log(data);
+                })
+                sakalli.on('opened', function () {
+                console.log("connection established!!");
+                })
+                sakalli.on('closed', () => {
+                console.log("connection closed!!");
+                })
+            }
         };
     ```
 * Vue
