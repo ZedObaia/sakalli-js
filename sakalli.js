@@ -56,12 +56,15 @@ class Sakalli extends EventEmitter {
                 this.conn.close()
                 this._hasConnection = false;
             }
+            return true;
         }
         else if(this.connection_count > 0){
             console.error("There's already a sakalli connection")
+            return false;
         }
          else {
             console.error("browser does not support websocket")
+            return false;
         }
     }
 
