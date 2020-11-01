@@ -1,21 +1,31 @@
 {
   "name": "sakalli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "js library for working with sakalli",
   "main": "index.js",
   "author": "Zeyad Obaia",
   "license": "MIT",
+  "scripts": {
+    "build-umd": "webpack --output-filename sakalli.umd.js"
+  },
   "eslintConfig": {
     "root": true,
     "env": {
       "node": true,
-      "es6" : true
+      "es6": true
     },
-    "parserOptions" :{
+    "parserOptions": {
       "parser": "babel-eslint",
       "sourceType": "module",
       "allowImportExportEverywhere": true
     },
     "rules": {}
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.1.0",
+    "json-loader": "^0.5.7",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
   }
 }
